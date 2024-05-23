@@ -19,112 +19,85 @@
   <script src="./lib/global.js?v=20240313"></script>
   <script src="./lib/crypto-js.min.js"></script>
   <style>
-    body,
-    html {
+    body, html {
       background-color: #ffffff;
       margin: 0;
       padding: 0;
-      /* font-size: 25px; */
-      
-
     }
 
     .container {
-      width: 9.333333rem;
+      width: 4.666667rem;  
       background-color: rgba(131, 193, 225, 0.2);
-      height: 9.333333rem;
+      height: 4.666667rem;  
       border-radius: 50%;
       margin: 0 auto;
       box-sizing: border-box;
-      padding: .666667rem;
-      box-shadow: 0 0 10px 2px rgba(131, 193, 225, 0.2);
-      /* transform: scale(.8); */
-      margin: .266667rem auto;
-
-   
-     
+      padding: .3333335rem;  
+      box-shadow: 0 0 5px 1px rgba(131, 193, 225, 0.2);  /* 调整阴影大小 */
+      margin: .1333335rem auto;  
     }
 
-  
-   
-
     .days-box {
-      width: 8rem;
-      height: 8rem;
+      width: 4rem;  
+      height: 4rem;  
       border-radius: 50%;
-      /* overflow: hidden; */
       background-color: rgba(131, 193, 225, 0.2);
       box-sizing: border-box;
-      padding: 1.066667rem;
-      box-shadow: 0 0 10px 2px rgba(131, 193, 225, 0.2);
-
-      /* position: relative; */
+      padding: .5333335rem;  
+      box-shadow: 0 0 5px 1px rgba(131, 193, 225, 0.2);  /* 调整阴影大小 */
       position: absolute;
-      
     }
 
     .head {
-      width: 5.866667rem;
-      height: 1.333333rem;
+      width: 2.9333335rem; 
+      height: .6666665rem;  
       text-align: center;
       color: #000000;
-      font-size: .48rem;
-      line-height: 3rem;
+      font-size: .24rem;  
+      line-height: 1.5rem;  
       position: absolute;
       background-color: transparent;
-      top: 1.47rem;
+      top: .735rem;  
       font-weight: bold;
     }
-    
-   
-    .content-image {
-      width: 6.2rem;
-      height: 8rem;
-      /* border-radius: 50%; */
-      position: absolute;
-      left: 48px;
-      top: -50px;
 
+    .content-image {
+      width: 3.1rem;  
+      height: 4rem;  
+      position: absolute;
+      left: 24px; 
+      top: -25px;  
       background-image: url('assets/images/daojishi.png');
       background-size: 100%;
       background-position: 0% 0%;
       background-repeat: no-repeat;
-
     }
 
-
     .content {
-      width: 5.866667rem;
-      height: 5.866667rem;
-      font-size: 3.2rem;
+      width: 2.9333335rem; 
+      height: 2.9333335rem;  
+      font-size: 1.6rem; 
       color: #333333;
       font-weight: bold;
       font-family: monospace;
       text-align: center;
-      line-height: 7.2rem;
-      /* background: rgba(131, 193, 225, 0.8); */
-
+      line-height: 3.6rem;
       border-radius: 50%;
       position: absolute;
-      /* overflow: hidden; */
-      box-shadow: 0 0 10px 20px rgba(131, 193, 225, 0.2);
+      box-shadow: 0 0 5px 10px rgba(131, 193, 225, 0.2); 
       z-index: 1;
-
-      
-
     }
 
     .content::after {
       content: "天";
       position: absolute;
       background: transparent;
-      width: 5.866667rem;
-      /* display: block; */
+      width: 2.9333335rem;  
       text-align: center;
-      line-height: 1.5;
+      line-height: .75rem; 
       color: #000000;
-      font-size: .533333rem;
-      top: 4.9rem;
+      font-size: .2666665rem; 
+      top: 2.25rem; 
       left: 0rem;
     }
 
@@ -132,24 +105,18 @@
       background-color: #f9f9f9;
       color: #999999;
       text-align: center;
-      height: 1.066667rem;
-      line-height: 1.066667rem;
-      font-size: .373333rem;
+      height: .5333335rem; 
+      line-height: .5333335rem;  
+      font-size: .1866665rem; 
     }
 
     .content span {
-      /* background-image: linear-gradient(135deg,#ffffff,#ffffff);
-            background-clip:text;
-            -webkit-background-clip:text;
-            color: transparent; */
-
       color: transparent;
-      -webkit-text-stroke: 3.5px #000000;
-      text-shadow: 0 0 10px 2px rgb(0 0 0 / 20%);
+      -webkit-text-stroke: 1.75px #000000;  
+      text-shadow: 0 0 5px 1px rgb(0 0 0 / 20%);  
     }
 
-    html[theme="dark"],
-    html[theme="dark"] body {
+    html[theme="dark"], html[theme="dark"] body {
       background-color: #191919;
     }
   </style>
