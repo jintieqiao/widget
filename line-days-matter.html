@@ -19,85 +19,112 @@
   <script src="./lib/global.js?v=20240313"></script>
   <script src="./lib/crypto-js.min.js"></script>
   <style>
-    body, html {
+    body,
+    html {
       background-color: #ffffff;
       margin: 0;
       padding: 0;
+      /* font-size: 25px; */
+      
+
     }
 
     .container {
-      width: 4.666667rem;  
+      width: 9.333333rem;
       background-color: rgba(131, 193, 225, 0.2);
-      height: 4.666667rem;  
+      height: 9.333333rem;
       border-radius: 50%;
       margin: 0 auto;
       box-sizing: border-box;
-      padding: .3333335rem;  
-      box-shadow: 0 0 5px 1px rgba(131, 193, 225, 0.2);  /* 调整阴影大小 */
-      margin: .1333335rem auto;  
+      padding: .666667rem;
+      box-shadow: 0 0 10px 2px rgba(131, 193, 225, 0.2);
+      /* transform: scale(.8); */
+      margin: .266667rem auto;
+
+   
+     
     }
 
+  
+   
+
     .days-box {
-      width: 4rem;  
-      height: 4rem;  
+      width: 8rem;
+      height: 8rem;
       border-radius: 50%;
+      /* overflow: hidden; */
       background-color: rgba(131, 193, 225, 0.2);
       box-sizing: border-box;
-      padding: .5333335rem;  
-      box-shadow: 0 0 5px 1px rgba(131, 193, 225, 0.2);  /* 调整阴影大小 */
+      padding: 1.066667rem;
+      box-shadow: 0 0 10px 2px rgba(131, 193, 225, 0.2);
+
+      /* position: relative; */
       position: absolute;
+      
     }
 
     .head {
-      width: 2.9333335rem; 
-      height: .6666665rem;  
+      width: 5.866667rem;
+      height: 1.333333rem;
       text-align: center;
       color: #000000;
-      font-size: .24rem;  
-      line-height: 1.5rem;  
+      font-size: .48rem;
+      line-height: 3rem;
       position: absolute;
       background-color: transparent;
-      top: .735rem;  
+      top: 1.47rem;
       font-weight: bold;
     }
-
+    
+   
     .content-image {
-      width: 3.1rem;  
-      height: 4rem;  
+      width: 6.2rem;
+      height: 8rem;
+      /* border-radius: 50%; */
       position: absolute;
-      left: 24px; 
-      top: -25px;  
+      left: 48px;
+      top: -50px;
+
       background-image: url('assets/images/daojishi.png');
       background-size: 100%;
       background-position: 0% 0%;
       background-repeat: no-repeat;
+
     }
 
+
     .content {
-      width: 2.9333335rem; 
-      height: 2.9333335rem;  
-      font-size: 1.6rem; 
+      width: 5.866667rem;
+      height: 5.866667rem;
+      font-size: 3.2rem;
       color: #333333;
       font-weight: bold;
       font-family: monospace;
       text-align: center;
-      line-height: 3.6rem;
+      line-height: 7.2rem;
+      /* background: rgba(131, 193, 225, 0.8); */
+
       border-radius: 50%;
       position: absolute;
-      box-shadow: 0 0 5px 10px rgba(131, 193, 225, 0.2); 
+      /* overflow: hidden; */
+      box-shadow: 0 0 10px 20px rgba(131, 193, 225, 0.2);
       z-index: 1;
+
+      
+
     }
 
     .content::after {
       content: "天";
       position: absolute;
       background: transparent;
-      width: 2.9333335rem;  
+      width: 5.866667rem;
+      /* display: block; */
       text-align: center;
-      line-height: .75rem; 
+      line-height: 1.5;
       color: #000000;
-      font-size: .2666665rem; 
-      top: 2.25rem; 
+      font-size: .533333rem;
+      top: 4.9rem;
       left: 0rem;
     }
 
@@ -105,18 +132,24 @@
       background-color: #f9f9f9;
       color: #999999;
       text-align: center;
-      height: .5333335rem; 
-      line-height: .5333335rem;  
-      font-size: .1866665rem; 
+      height: 1.066667rem;
+      line-height: 1.066667rem;
+      font-size: .373333rem;
     }
 
     .content span {
+      /* background-image: linear-gradient(135deg,#ffffff,#ffffff);
+            background-clip:text;
+            -webkit-background-clip:text;
+            color: transparent; */
+
       color: transparent;
-      -webkit-text-stroke: 1.75px #000000;  
-      text-shadow: 0 0 5px 1px rgb(0 0 0 / 20%);  
+      -webkit-text-stroke: 3.5px #000000;
+      text-shadow: 0 0 10px 2px rgb(0 0 0 / 20%);
     }
 
-    html[theme="dark"], html[theme="dark"] body {
+    html[theme="dark"],
+    html[theme="dark"] body {
       background-color: #191919;
     }
   </style>
